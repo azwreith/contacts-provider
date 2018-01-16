@@ -132,6 +132,6 @@ public class ContactsList extends Fragment implements
         String lookupKey = cursor.getString(LOOKUP_KEY_INDEX);
         Uri contactURI = ContactsContract.Contacts.getLookupUri(contactID, lookupKey);
 
-        Toast.makeText(getActivity(), contactURI.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "URI" + contactURI.toString(), Toast.LENGTH_SHORT).show();
     }
 }
